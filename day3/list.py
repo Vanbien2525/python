@@ -61,3 +61,11 @@ if(x == True):
     print("VBien Co ten trong list")
 else:
     print("Khong co ten trong list")
+print()
+
+fruits = ["apple", "banana", "guava"]
+listCopy1 = fruits
+listCopy2 = fruits.copy()
+fruits.append("kiwi") # thay doi list ban dau
+print("Bi thay doi theo list ban dau: ", listCopy1)
+print("Khong bi thay doi theo list ban dau:", listCopy2)
