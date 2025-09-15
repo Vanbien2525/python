@@ -25,3 +25,39 @@ print("-" *40)
 
 #lay chieu dai cua list
 print("so luong gia tri cua int_number la:", len(int_number))
+print()
+
+#Them gia tri vao list
+print("Ban dau:", friend)
+friend.append("Duong")
+print("Sau do:", friend)
+print()
+
+#Xoa gia tri trong list
+print("Ban dau:", friend)
+friend.remove("Khy")
+print("Sau do:", friend)
+print()
+
+#Mo rong list bang listkhac
+print("Ban dau:", friend)
+friend.extend(["Anh", "Chi", "Em"])
+print("Sau do:", friend)
+print()
+
+print(friend[-7:-5])
+print()
+print(friend[2:5])
+print()
+
+
+#duyet list
+for x in friend:
+    print(x)
+print()
+
+x = "VBien" in friend
+if(x == True):
+    print("VBien Co ten trong list")
+else:
+    print("Khong co ten trong list")
