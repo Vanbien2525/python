@@ -17,7 +17,6 @@ print(type(number))
 print(number)
 
 
-
 number =int(input("Nhap so nguyen: "))
 print(type(number))
 print(number)

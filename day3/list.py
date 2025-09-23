@@ -69,3 +69,31 @@ listCopy2 = fruits.copy()
 fruits.append("kiwi") # thay doi list ban dau
 print("Bi thay doi theo list ban dau: ", listCopy1)
 print("Khong bi thay doi theo list ban dau:", listCopy2)
+
+friends = [["Jen", 23], ["Bob", 32], ["Kenny", 37]]
+print(type(friends))
+print(friends[2][0])
+
+# Ví dụ
+# Đánh chỉ số cho list (danh sách)
+# Chỉ số trong list đếm từ 0
+#          0   1    2   3    4    5
+#         -6  -5   -4  -3   -2   -1   
+numbers = [1, 10, -23, 45, -89, 1000]
+
+# Lấy ra 3 giá trị đầu tiên từ numbers
+# không lấy giá trị tại ví trị 3 (hay vị trí thứ 4)
+new_numbers = numbers[0:3:1]
+print(new_numbers)
+
+# Copy ra thành một danh sách mới sử dụng list slicing
+new_numbers = numbers[:]
+print("Hai danh sách có phải là 1 không ?", new_numbers is numbers)
+print("Hai danh sách có giá trị bằng nhau không ?", new_numbers == numbers)
+
+print(new_numbers)
+
+s = 0
+for i in range(1, 10):
+    s+=i
+print(s)
