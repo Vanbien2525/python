@@ -8,6 +8,12 @@
 
 n = int(input("Nhập n: "))
 
-print(f"{n} là số chẵn" if n % 2 == 0 else f"{n} là số lẻ")
+print(f"{n} là số chẵn" if n % 2 == 0 else f"{n} là số lẻ", end=" ")
 
 print(f"{n} nằm trong khoảng 10 và 50" if 10 <= n <= 50 else f"{n} không nằm trong khoảng 10 và 50")
+
+import random
+print(random.randrange(1,10))
+
+if (y := len("Python")) > 5:
+    print(f"Chuỗi có {y} ký tự.")
